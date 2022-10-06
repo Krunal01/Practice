@@ -13,8 +13,13 @@ function Student(props) {
 }
 
 Student.propTypes = {
-  name: PropTypes.string,
-  rollno: PropTypes.number,
+  name: PropTypes.string.isRequired,
+  rollno: PropTypes.number.isRequired,
+};
+
+Student.defaultProps = {
+  name: "like Mohan",
+  rollno: 100,
 };
 
 export default Student;
