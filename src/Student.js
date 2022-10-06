@@ -1,7 +1,7 @@
 import React from "react";
 
-function Student() {
-  return <h2>Function based Component</h2>;
+function Student(props) {
+  return <h2>Hello Student {props.name}</h2>;
 }
 
 export default Student;

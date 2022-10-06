@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-//using element
-//const e = <h1>Hello World</h1>;
+import React from "react";
+import Student from "./Student";
 
-//using component
-class App extends Component {
-  //render method important
-  render() {
-    //retrun react element
-    return <h2>Class based Component</h2>;
-  }
+function App() {
+  return (
+    <React.Fragment>
+      <Student name="stu1" />
+      <Student name="stu2" />
+      <Student name="stu2" />
+    </React.Fragment>
+  );
 }
 
 export default App;
