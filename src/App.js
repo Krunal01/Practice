@@ -4,9 +4,9 @@ import Student from "./Student";
 function App() {
   return (
     <React.Fragment>
-      <Student name="stu1" />
-      <Student name="stu2" />
-      <Student name="stu2" />
+      <Student name="Rahul" rollno="101" />
+      <Student name="Suhan" rollno="102" />
+      <Student name="Jemin" rollno="103" />
     </React.Fragment>
   );
 }

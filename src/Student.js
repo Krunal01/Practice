@@ -1,7 +1,14 @@
 import React from "react";
 
 function Student(props) {
-  return <h2>Hello Student {props.name}</h2>;
+  return (
+    <React.Fragment>
+      <h2>
+        <div>Student Name : {props.name}</div>
+        <div>Student Rollno : {props.rollno}</div>
+      </h2>
+    </React.Fragment>
+  );
 }
 
 export default Student;
