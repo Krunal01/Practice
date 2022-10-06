@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Student(props) {
   return (
@@ -10,5 +11,10 @@ function Student(props) {
     </React.Fragment>
   );
 }
+
+Student.propTypes = {
+  name: PropTypes.string,
+  rollno: PropTypes.number,
+};
 
 export default Student;
