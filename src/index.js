@@ -15,7 +15,8 @@ import Student from "./Student";
 //   document.getElementById("root")
 // );
 
-ReactDOM.render(
-  <Student name="Rahul" subject="OS" />,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <Student name="Rahul" subject="OS" />,
+//   document.getElementById("root")
+// );
+ReactDOM.render(<Student />, document.getElementById("root"));
