@@ -69,34 +69,34 @@
 //     </div>
 //   );
 // }
-import React, { Component } from "react";
+// import React, { Component } from "react";
 
-class Student extends Component {
-  // constructor(props) {
-  // super(props);
-  state = {
-    name: "Rahul",
-    id: 1,
-    // sub: this.props.subject,
-  };
+// class Student extends Component {
+//   // constructor(props) {
+//   // super(props);
+//   state = {
+//     name: "Rahul",
+//     id: 1,
+//     // sub: this.props.subject,
+//   };
 
-  handleClick = (e, id) => {
-    // this.setState({ name: "Jay", sub: "COA" });
-    console.log("Button CLicked");
-    console.log(id, e);
-  };
-  handleClickArg = (e) => {
-    this.handleClick(this.state.id, e);
-  };
+//   handleClick = (e, id) => {
+//     // this.setState({ name: "Jay", sub: "COA" });
+//     console.log("Button CLicked");
+//     console.log(id, e);
+//   };
+//   handleClickArg = (e) => {
+//     this.handleClick(this.state.id, e);
+//   };
 
-  render() {
-    return (
-      <div>
-        <h1>Hello {this.state.name}</h1>
-        <button onClick={this.handleClickArg}>CLick Me</button>
-      </div>
-    );
-  }
-}
+//   render() {
+//     return (
+//       <div>
+//         <h1>Hello {this.state.name}</h1>
+//         <button onClick={this.handleClickArg}>CLick Me</button>
+//       </div>
+//     );
+//   }
+// }
 
-export default Student;
+// export default Student;

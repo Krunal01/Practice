@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Student from "./Student";
-// import App from "./App";
+// import Student from "./Student";
+import App from "./App";
 // import Student from "./Student";
 
 // ReactDOM.render(
@@ -19,4 +19,4 @@ import Student from "./Student";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Student />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
