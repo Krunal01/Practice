@@ -28,34 +28,45 @@
 
 // export default Student;
 
-// import React, { Component } from "react";
+import React, { Component } from "react";
 
-// class Student extends Component {
-//   state = {
-//     name: "Rahul",
-//     sub: this.props.subject,
-//   };
-//   render() {
-//     return (
-//       <h1>
-//         Hello {this.state.name} and Subject is {this.state.sub}
-//       </h1>
-//     );
-//   }
-// }
-
-import React from "react";
-
-function Student(props) {
-  function handleClick() {
-    console.log("Button Clicked");
+class Student extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Rahul",
+      sub: this.props.subject,
+    };
   }
 
-  return (
-    <div>
-      <h1>Hello {props.name}</h1>
-      <button onClick={handleClick}>CLick Me</button>
-    </div>
-  );
+  handleClick = () => {
+    this.setState({ name: "Jay", sub: "COA" });
+  };
+
+  render() {
+    return (
+      <div>
+        <h1>
+          Hello {this.state.name} and Subject is {this.state.sub}
+        </h1>
+        <button onClick={this.handleClick}>CLick Me</button>
+      </div>
+    );
+  }
 }
+
+// import React from "react";
+
+// function Student(props) {
+//   function handleClick() {
+//     console.log("Button Clicked");
+//   }
+
+//   return (
+//     <div>
+//       <h1>Hello {props.name}</h1>
+//       <button onClick={handleClick}>CLick Me</button>
+//     </div>
+//   );
+// }
 export default Student;
