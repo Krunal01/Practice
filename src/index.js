@@ -10,7 +10,9 @@ import Student from "./Student";
 //   </Student>,
 //   document.getElementById("root")
 // );
-ReactDOM.render(
-  <Student subject="Operating System" />,
-  document.getElementById("root")
-);
+// ReactDOM.render(
+//   <Student subject="Operating System" />,
+//   document.getElementById("root")
+// );
+
+ReactDOM.render(<Student name="Rahul" />, document.getElementById("root"));
