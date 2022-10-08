@@ -1,7 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Apps from "./Apps";
+// import usecustom from "./Usecustom";
 // import Student from "./Student";
-import App from "./App";
+// import App from "./App";
 // import Student from "./Student";
 
 // ReactDOM.render(
@@ -19,4 +21,4 @@ import App from "./App";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Apps />, document.getElementById("root"));
