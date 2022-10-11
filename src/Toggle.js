@@ -4,21 +4,21 @@ function Toggle() {
   const [status, setStatus] = useState(true);
   return (
     <div>
-      {status ? <h1>Toggle</h1> : null}
+      {status ? <h1>Hello World</h1> : null}
       <button
         onClick={() => {
-          setStatus(false);
+          setStatus(!status);
         }}
       >
-        Hide
+        Toggle
       </button>
-      <button
+      {/* <button
         onClick={() => {
           setStatus(true);
         }}
       >
         Show
-      </button>
+      </button> */}
     </div>
   );
 }
