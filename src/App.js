@@ -29,15 +29,15 @@
 
 // export default App;
 import React from "react";
-import User from "./User";
-import Guest from "./Guest";
+import Profile from "./Profile";
 
-function App(consumer) {
-  const isReg = consumer;
-  if (isReg) {
-    return <User />;
-  }
-  return <Guest />;
+function App() {
+  return (
+    <div>
+      {/* <h1>Conditional Rendering</h1> */}
+      <Profile />
+    </div>
+  );
 }
 
 export default App;
