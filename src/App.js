@@ -12,19 +12,32 @@
 //   );
 // }
 
-import React, { useState } from "react";
+// import React, { useState } from "react";
 
-function App() {
-  const [name, setName] = useState("Krunal");
-  const handleClick = () => {
-    setName("Rahul");
-  };
-  return (
-    <React.Fragment>
-      <h1>{name}</h1>
-      <button onClick={handleClick}>Change</button>
-    </React.Fragment>
-  );
+// function App() {
+//   const [name, setName] = useState("Krunal");
+//   const handleClick = () => {
+//     setName("Rahul");
+//   };
+//   return (
+//     <React.Fragment>
+//       <h1>{name}</h1>
+//       <button onClick={handleClick}>Change</button>
+//     </React.Fragment>
+//   );
+// }
+
+// export default App;
+import React from "react";
+import User from "./User";
+import Guest from "./Guest";
+
+function App(consumer) {
+  const isReg = consumer;
+  if (isReg) {
+    return <User />;
+  }
+  return <Guest />;
 }
 
 export default App;
