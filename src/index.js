@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Simpleform from "./Simpleform";
 // import App from "./App";
-import Toggle from "./Toggle";
+// import Toggle from "./Toggle";
 // import Apps from "./Apps";
 // import usecustom from "./Usecustom";
 // import Student from "./Student";
@@ -22,4 +23,4 @@ import Toggle from "./Toggle";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Toggle />, document.getElementById("root"));
+ReactDOM.render(<Simpleform />, document.getElementById("root"));
