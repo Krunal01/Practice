@@ -29,13 +29,19 @@
 
 // export default App;
 import React from "react";
+import Member from "./Member";
+import Mem1 from "./Mem1";
 // import Profile from "./Profile";
-import Login from "./Login";
+// import Login from "./Login";
 function App() {
+  function getData() {
+    alert("Hello ");
+  }
   return (
     <div>
       {/* <h1>Conditional Rendering</h1> */}
-      <Login />
+      <Member data={getData} />
+      <Mem1 data={getData} />
     </div>
   );
 }
