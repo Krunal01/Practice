@@ -29,13 +29,13 @@
 
 // export default App;
 import React from "react";
-import Profile from "./Profile";
-
+// import Profile from "./Profile";
+import Login from "./Login";
 function App() {
   return (
     <div>
       {/* <h1>Conditional Rendering</h1> */}
-      <Profile />
+      <Login />
     </div>
   );
 }
