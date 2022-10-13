@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Style from "./Style";
+import Arr from "./Arr";
+// import Style from "./Style";
 // import Simpleform from "./Simpleform";
 // import App from "./App";
 // import Toggle from "./Toggle";
@@ -24,4 +25,4 @@ import Style from "./Style";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Style />, document.getElementById("root"));
+ReactDOM.render(<Arr />, document.getElementById("root"));
