@@ -47,27 +47,54 @@
 // }
 
 // export default App;
+// import React, { useEffect, useState } from "react";
+
+// function App() {
+//   const [count, setCount] = useState(0);
+//   useEffect(() => {
+//     console.log("calling another useEffect inside the hello function");
+//   });
+// function Hello() {
+//   console.log("hello function calling inside useEffect");
+//   useEffect(() => {
+//     console.log("calling another 22222 useEffect inside the hello function");
+//   });
+// }
+// Hello();
+
+// Hello();
+// useEffect(() => {
+//   console.log("useEffect as a life cycle");
+//CAN'T CALLED FUNCTION INSIDE THE HOOK
+//   Hello();
+// });
+//   return (
+//     <div>
+//       <h1>App {count}</h1>
+//       <button
+//         onClick={() => {
+//           setCount(count + 1);
+//         }}
+//       >
+//         Update Counter
+//       </button>
+//     </div>
+//   );
+// }
+
+// export default App;
+
 import React, { useEffect, useState } from "react";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(10);
+  const [data, setData] = useState(100);
   useEffect(() => {
-    console.log("calling another useEffect inside the hello function");
-  });
-  function Hello() {
-    console.log("hello function calling inside useEffect");
-    useEffect(() => {
-      console.log("calling another 22222 useEffect inside the hello function");
-    });
-  }
-  Hello();
-
-  // Hello();
-  // useEffect(() => {
-  //   console.log("useEffect as a life cycle");
-  //CAN'T CALLED FUNCTION INSIDE THE HOOK
-  //   Hello();
-  // });
+    console.log("useEffect called by data");
+  }, [data]);
+  useEffect(() => {
+    alert("useEffect called by counter  " + count);
+  }, [count]);
   return (
     <div>
       <h1>App {count}</h1>
@@ -77,6 +104,18 @@ function App() {
         }}
       >
         Update Counter
+      </button>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h1>App {data}</h1>
+      <button
+        onClick={() => {
+          setData(data - 1);
+        }}
+      >
+        Update Data
       </button>
     </div>
   );
