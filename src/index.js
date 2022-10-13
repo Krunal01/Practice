@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Style from "./Style";
 // import Simpleform from "./Simpleform";
-import App from "./App";
+// import App from "./App";
 // import Toggle from "./Toggle";
 // import Apps from "./Apps";
 // import usecustom from "./Usecustom";
@@ -23,4 +24,4 @@ import App from "./App";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Style />, document.getElementById("root"));
