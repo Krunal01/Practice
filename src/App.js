@@ -28,20 +28,56 @@
 // }
 
 // export default App;
-import React from "react";
-import Member from "./Member";
-import Mem1 from "./Mem1";
-// import Profile from "./Profile";
-// import Login from "./Login";
+// import React from "react";
+// import Member from "./Member";
+// import Mem1 from "./Mem1";
+// // import Profile from "./Profile";
+// // import Login from "./Login";
+// function App() {
+//   function getData() {
+//     alert("Hello ");
+//   }
+//   return (
+//     <div>
+//       {/* <h1>Conditional Rendering</h1> */}
+//       <Member data={getData} />
+//       <Mem1 data={getData} />
+//     </div>
+//   );
+// }
+
+// export default App;
+import React, { useEffect, useState } from "react";
+
 function App() {
-  function getData() {
-    alert("Hello ");
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log("calling another useEffect inside the hello function");
+  });
+  function Hello() {
+    console.log("hello function calling inside useEffect");
+    useEffect(() => {
+      console.log("calling another 22222 useEffect inside the hello function");
+    });
   }
+  Hello();
+
+  // Hello();
+  // useEffect(() => {
+  //   console.log("useEffect as a life cycle");
+  //CAN'T CALLED FUNCTION INSIDE THE HOOK
+  //   Hello();
+  // });
   return (
     <div>
-      {/* <h1>Conditional Rendering</h1> */}
-      <Member data={getData} />
-      <Mem1 data={getData} />
+      <h1>App {count}</h1>
+      <button
+        onClick={() => {
+          setCount(count + 1);
+        }}
+      >
+        Update Counter
+      </button>
     </div>
   );
 }
