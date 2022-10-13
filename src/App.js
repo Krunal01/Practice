@@ -85,19 +85,22 @@
 // export default App;
 
 import React, { useEffect, useState } from "react";
-
+import Spec from "./Spec";
 function App() {
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(20);
   const [data, setData] = useState(100);
-  useEffect(() => {
-    console.log("useEffect called by data");
-  }, [data]);
-  useEffect(() => {
-    alert("useEffect called by counter  " + count);
-  }, [count]);
+  // // useEffect(() => {
+  // //   console.log("useEffect called by data");
+  // // }, [data]);
+  // // useEffect(() => {
+  // //   alert("useEffect called by counter  " + count);
+  // // }, [count]);
   return (
     <div>
-      <h1>App {count}</h1>
+      <Spec count={count} data={data} />
+      {/* <h1>{count}</h1>
+      <h1>{data}</h1> */}
+      {/* <h1>{data}</h1> */}
       <button
         onClick={() => {
           setCount(count + 1);
@@ -105,11 +108,7 @@ function App() {
       >
         Update Counter
       </button>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <h1>App {data}</h1>
+
       <button
         onClick={() => {
           setData(data - 1);
