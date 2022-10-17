@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Arr from "./Arr";
+// import Arr from "./Arr";
+import NestedComp from "./NestedComp";
 // import Style from "./Style";
 // import Simpleform from "./Simpleform";
 // import App from "./App";
@@ -25,4 +26,4 @@ import Arr from "./Arr";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Arr />, document.getElementById("root"));
+ReactDOM.render(<NestedComp />, document.getElementById("root"));
