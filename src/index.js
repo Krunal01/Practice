@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Child from "./Child";
+// import Child from "./Child";
+import Memo from "./Memo";
 // import Arr from "./Arr";
 // import NestedComp from "./NestedComp";
 // import Style from "./Style";
@@ -27,4 +28,4 @@ import Child from "./Child";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Child />, document.getElementById("root"));
+ReactDOM.render(<Memo />, document.getElementById("root"));
