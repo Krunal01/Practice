@@ -3,7 +3,7 @@ import React from "react";
 function NestedRout() {
   return (
     <div>
-      <h1>NestedRout page</h1>
+      <h1>NestedRout Page</h1>
     </div>
   );
 }
