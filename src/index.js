@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 // import Child from "./Child";
 import Memo from "./Memo";
+import Useref from "./Useref";
 // import Arr from "./Arr";
 // import NestedComp from "./NestedComp";
 // import Style from "./Style";
@@ -28,4 +29,4 @@ import Memo from "./Memo";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Memo />, document.getElementById("root"));
+ReactDOM.render(<Useref />, document.getElementById("root"));
