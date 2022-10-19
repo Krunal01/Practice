@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Imp from "./Imp";
+// import Imp from "./Imp";
+import Rout from "./Rout";
 // import Forwref from "./Forwref";
 // import Child from "./Child";
 // import Memo from "./Memo";
@@ -31,4 +32,4 @@ import Imp from "./Imp";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Imp />, document.getElementById("root"));
+ReactDOM.render(<Rout />, document.getElementById("root"));
