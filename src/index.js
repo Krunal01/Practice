@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Forwref from "./Forwref";
 // import Child from "./Child";
-import Memo from "./Memo";
-import Useref from "./Useref";
+// import Memo from "./Memo";
+// import Useref from "./Useref";
 // import Arr from "./Arr";
 // import NestedComp from "./NestedComp";
 // import Style from "./Style";
@@ -29,4 +30,4 @@ import Useref from "./Useref";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Useref />, document.getElementById("root"));
+ReactDOM.render(<Forwref />, document.getElementById("root"));
