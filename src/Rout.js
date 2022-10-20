@@ -2,7 +2,8 @@ import React from "react";
 import { BrowserRouter, Route, Routes, Link, Navigate } from "react-router-dom";
 import SubRoute from "./SubRoute";
 import NestedRout from "./NestedRout";
-import Page404 from "./Page404";
+import Params from "./Params";
+// import Page404 from "./Page404";
 
 function Rout() {
   return (
@@ -12,10 +13,15 @@ function Rout() {
         <Link to="/NestedRout">NestedRoute</Link>
         <br></br>
         <Link to="/">Home</Link>
+        <br></br>
+        <Link to="/Params">Param</Link>
+        <br></br>
+
         <Routes>
           <Route path="/" element={<SubRoute />} />
           <Route path="/NestedRout" element={<NestedRout />} />
           {/* <Route path="/*" element={<Page404 />} /> */}
+          <Route path="/Params/:name" element={<Params />} />
           <Route path="/*" element={<Navigate to="/NestedRout" />} />
         </Routes>
       </BrowserRouter>
