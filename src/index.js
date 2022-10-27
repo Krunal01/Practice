@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Prev from "./Prev";
+import Stateobj from "./Stateobj";
+// import Prev from "./Prev";
 // import Imp from "./Imp";
 // import Rout from "./Rout";
 // import Forwref from "./Forwref";
@@ -33,4 +34,4 @@ import Prev from "./Prev";
 //   <Student name="Rahul" subject="OS" />,
 //   document.getElementById("root")
 // );
-ReactDOM.render(<Prev />, document.getElementById("root"));
+ReactDOM.render(<Stateobj />, document.getElementById("root"));
