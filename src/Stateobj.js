@@ -12,7 +12,7 @@ function Stateobj() {
         placeholder="enter name"
         value={data.name}
         onChange={(e) => {
-          setData({ age: data.age, name: e.target.value });
+          setData({ ...data, name: e.target.value });
         }}
       />
       <input
@@ -20,7 +20,7 @@ function Stateobj() {
         placeholder="enter age"
         value={data.age}
         onChange={(e) => {
-          setData({ name: data.name, age: e.target.value });
+          setData({ ...data, age: e.target.value });
         }}
       />
       <h2>{data.name}</h2>
